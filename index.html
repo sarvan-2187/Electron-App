@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Crafters - Desktop App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #484848;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-top: 20px;
+      background-color: #a6a6a6;
+      border: none;
+      border-radius: 5px;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #adadad;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Web Crafters</h1>
+  <p>This is your Electron-powered desktop app.</p>
+  <button onclick="handleClick()">Click Me</button>
+
+  <script>
+    function handleClick() {
+      alert("Hello from Electron!");
+    }
+  </script>
+</body>
+</html>
